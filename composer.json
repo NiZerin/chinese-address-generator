@@ -1,0 +1,40 @@
+{
+    "name": "nizerin/chinese-address-generator",
+    "description": "中国地址生成器 - 三级地址 四级地址 随机生成完整地址",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nizerin",
+            "email": "i@nizer.in"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nizerin\\ChineseAddressGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nizerin\\ChineseAddressGenerator\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always ./tests"
+    },
+    "archive": {
+        "exclude": [
+            "/composer.lock",
+            "/.gitignore",
+            "/tests",
+            "/vendor"
+        ]
+    }
+}
